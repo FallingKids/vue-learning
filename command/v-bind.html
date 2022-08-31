@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 示例</title>
+</head>
+<body>
+    <div id="app">
+        <a v-bind:href="url">链接</a>
+        <img v-bind:src="imgUrl">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: document.getElementById('app'), // '#app'
+            data: {
+                url: 'https://www.baidu.com',
+                imgUrl: 'https://res.cloudinary.com/https-fallingkids-github-io/image/upload/v1654054743/blog/2022-06-01/image_qvugqu.png'
+            },
+        })
+    </script>
+</body>
+</html>
